@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    color: #4dffb8;
+}
+h1{
+    margin: 5%;
+    font-size: 300%;
+}
+h4{
+    font-size: 200%;
+}
+select{
+    background-color: black;
+    color: #4dffb8;
+    width: 40%;
+    height: 10%;
+    font-size: 200%;
+}
+h2{
+    display:inline;
+    margin-left: 20%;
+    margin-top: 3%;
+}
+input{
+    display:inline;
+    margin-top: 3%;
+    width: 40%;
+    height: 5%;
+    font-size: 150%;
+    margin-left: 1%;
+}
+button{
+    height: 10%;
+    width: 30%;
+    font-size: 150%;
+    background-color: #4dffb8;
+    margin-top: 2%;
+}
+h3{
+    margin-left: 20%;
+    margin-top: 1%;
+    width: 80%;
+    height: 10%;
+    font-size: 125%;
+}

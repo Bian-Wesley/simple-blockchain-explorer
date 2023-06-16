@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title> Simple Blockchain Explorer </title>
+        <script src = "script.js"> </script>
+        <link rel = "stylesheet" href = "style.css" />
+        <link rel="icon" type="image/x-icon" href="Blockchain-Explorer-Logo.jpg">
+    </head>
+    <body>
+        <center>
+            <h1> Simple Blockchain Explorer </h1>
+            <h4> Check out this SQL Dune table and chart of the balance changes of USDC on Arbitrum of a Purebet aggregation wallet over time <a href = "https://dune.com/purebet/balances" target = "_blank"> here</a></h4>
+            <select id = "selector" onclick = "selectionResponse()">
+                <option> Balance of Bitcoin address </option>
+                <option> Bitcoin transaction info </option>
+                <option> Balance of Ethereum address </option>
+                <option> ERC20 token balance for an Ethereum address</option>
+                <option> Ethereum transaction info </option>
+                <option> Balance on an EVM layer 2 of an address</option>
+            </select>
+        </center>
+        <span>
+            <h2 id = "userInputDescription">Enter a bitcoin address here: </h2>
+            <input id = "userInput" type = "text" value = "bc1q8sat4q6tu7ylsl8jxsrdjj6ecz87r239kjhfx0" /> 
+        </span>
+        <span>
+            <h2 style = "display:none;" id = "userInputExtraDescription"> Enter an extra text value here</h2>
+            <input style = "display:none;" id = "userInputExtra" type = "text" value = "extra text field when needed" />
+        </span>
+        <br/>
+        <center>
+            <button id = "button" onclick = "bitBal()"> See the balance of this Bitcoin address  </button>
+        </center>
+        <div id = "results"></div>
+    </body>
+</html>
